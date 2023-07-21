@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .tb-promo {
+            position: relative;
+            width: 800px;
+            height: 450px;
+            background-color: aqua;
+            margin: 100px auto;
+            background: url(../images/淘宝.png)  repeat  #a5a5a5;
+        }
+        .tb-promo img {
+            width: 100%;
+        }
+        .prev ,.next {
+            position: absolute;
+            padding-bottom: 4px;
+            top: 50%;
+            margin-top: -15px ;
+            width: 20px;
+            height: 30px;
+            background: rgba(0,0,0,.2);
+            line-height: 30px;
+            color: #fff;
+            text-decoration: none;
+            font-size: 20px;
+            font-weight: 600;
+
+        }
+
+         .next {
+            right: 0;
+            text-align: right;
+            border-radius: 15px 0 0 15px;
+
+        }
+
+        .prev {
+            left: 0;
+            text-align: left;
+            border-radius:0 15px 15px 0;
+
+        }
+
+        .promo-nav {
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            margin-left: -35px;
+            width: 80px;
+            height: 14px;
+            background: rgba(255,255,255,.3);
+            border-radius: 7px ;
+        }
+
+        .promo-nav li {
+            float: left;
+            width: 8px;
+            height: 8px;
+            background-color: #fff;
+            border-radius: 50%;
+            list-style: none;
+            margin: 4% 5%;
+        }
+
+        .promo-nav .selected {
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <div class="tb-promo">
+        <!-- <img src="../images/淘宝.png" alt=""> -->
+        <a href="#" class="prev">&lt;</a>
+        <a href="#" class="next"> > </a></a>
+        <ul class="promo-nav">
+            <li class="selected"></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+</body>
+</html>

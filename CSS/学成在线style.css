@@ -1,0 +1,362 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ .clearfix:before,
+ .clearfix:after {
+     content: "";
+     display: table;
+ }
+
+ .clearfix:after {
+     clear: both;
+ }
+
+body {
+    background-color: #f3f5f7;
+    height: 3000px;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.w {
+    width: 1200px;
+    margin: auto;
+}
+
+.header {
+    margin: 25px auto;
+    height: 42px;
+    /* background-color: rgb(188, 196, 196); */
+}
+
+.logo {
+    float: left;
+    width: 195px;
+    /* background-color: gold; */
+}
+
+.nav {
+    float: left;
+    margin-left: 60px;
+}
+
+.nav ul li {
+    float: left;
+    height: 42px;
+    padding: 0 5px;
+}
+
+.nav ul li a {
+    display: block;
+    height: 42px;
+    padding: 0 10px;
+    line-height: 42px;
+    font-size: 18px;
+}
+
+.nav ul li a:hover {
+    border-bottom: 2px solid #00a4ff;
+}
+
+.search {
+    float: left;
+    margin-left: 85px;
+    width: 412px;
+}
+
+.search .kuang {
+    float: left;
+    width: 345px;
+    height: 40px;
+    border: 1px solid #00a4ff;
+    border-right: none;
+    color: #bfbfbf;
+    font-size: 14px;
+    padding-left: 15px;
+}
+
+.search .kuang:hover {
+    border-color: aqua;
+}
+
+.search button {
+    float: left;
+    width: 50px;
+    height: 42px;
+    border: none;
+    background-color: #00a4ff;
+    background: url(../学成在线images/fa-search.png);
+}
+
+.username {
+    float: right;
+    line-height: 42px;
+    margin: 0 30px;
+}
+
+.user {
+    display: inline-block;
+    margin: 0 auto;
+}
+
+.banner {
+    height: 420px;
+    background-color: #1c036c;
+}
+
+.banner .w {
+    height: 420px;
+    background: url(../学成在线images/banner2.png);
+}
+
+.banner .subnav {
+    float: left;
+    width: 190px;
+    padding: 12px 0;
+    background: rgba(0, 0, 0, .3);
+}
+
+.subnav ul li {
+    height: 44px;
+    line-height: 44px;
+    padding: 0 25px;
+}
+
+.banner .subnav ul li a {
+    display: block;
+    font-size: 14px;
+    color: aliceblue;
+}
+
+.banner .subnav ul li a span {
+    float: right;
+}
+
+.banner .subnav ul li a:hover {
+    color: #00a4ff;
+}
+
+.banner .course {
+    float: right;
+    margin: 60px 0;
+    height: 300px;
+    width: 230px;
+    background-color: #fff;
+}
+
+.course h2 {
+    height: 48px;
+    /* font: 18px  "微软雅黑"; */
+    font-size: 18px;
+    line-height: 48px;
+    color: #fff;
+    text-align: center;
+    background-color: #9bceea;
+}
+
+.list {
+    padding: 25px;
+}
+
+.list ul li {
+    text-align: left;
+    border-bottom: 2px solid rgb(204, 199, 199);
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.list ul li a {
+    display: block;
+}
+
+.list ul li a h4 {
+    font-size: 16px;
+    color: #4e4e4e;
+}
+
+.list ul li a p {
+    color: #a5a5a5;
+    font-size: 12px;
+}
+
+.list ul li a h4:hover {
+    color: #00a4ff;
+}
+
+.more {
+    display: block;
+    margin-top: 5px;
+    width: 180px;
+    height: 38px;
+    text-align: center;
+    font: normal 700 18px/38px "微软雅黑";
+    border: 1px solid #00a4ff;
+    color: #00a4ff;
+}
+
+.more:hover {
+    color: aqua;
+}
+
+.goods {
+    height: 60px;
+    background-color: #fff;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, .15);
+    margin-top: 10px;
+}
+
+.goods ul li {
+    float: left;
+    width: 120px;
+    text-align: center;
+}
+
+.goods ul li a {
+    display: block;
+    font: 700 16px/60px "微软雅黑"
+}
+
+.goods ul li a span {
+    float: right;
+    color: #a5a5a5;
+}
+
+.goods .mod {
+    display: block;
+    float: right;
+    font: 900 30px "微软雅黑";
+    margin: 0 20px;
+}
+
+.goods .mod:hover,
+.goods ul li a:hover {
+    color: #00a4ff;
+}
+
+.box {
+    margin-top: 20px;
+}
+
+.box-hd {
+    height: 45px;
+}
+
+.box-hd h2 {
+    float: left;
+    font-size: 20px;
+    color: #494949;
+    line-height: 45px;
+}
+
+.box-hd a {
+    float: right;
+    font-size: 14px;
+    line-height: 45px;
+    color: #00a4ff;
+}
+
+.box-bd ul {
+    width: 1210px;
+}
+.box-bd ul li {
+    float: left;
+    width: 232px;
+    height: 270px;
+    margin: 0 10px 15px 0;
+    background-color: #fff;
+}
+
+.box-bd ul li img {
+    width: 100%;
+}
+
+.box-bd ul li h4 {
+    margin: 20px;
+    font-size: 14px;
+    color: #050505;
+    font-weight: 400;
+}
+
+.box-bd .number {
+    margin: 0 20px ;
+    font-size: 12px;
+    color: #999;
+}
+
+.number span {
+    color: #ff7c2d;
+}
+
+.box-bd ul li a h4:hover {
+    font-weight: 700;
+    color: aqua;
+}
+
+.end {
+    margin-top: 50px;
+    height: 415px;
+    background-color: #fff;
+}
+
+.end .w {
+    padding-top: 35px;
+}
+
+.end-l {
+    float: left;
+}
+
+.end-l img {
+    width: 300px;
+}
+
+.end-l p {
+    font-size: 12px;
+
+}
+
+.end-l .downloap {
+    display: block;
+    margin-top: 30px;
+    width: 120px;
+    height: 35px;
+    border: 1px solid #00a4ff;
+    line-height: 35px;
+    text-align: center;
+}
+
+.downloap:hover {
+    color: #00a4ff;
+}
+
+.end-r{
+    float: right;
+}
+
+.end-r dl {
+    float: left;
+    margin-left: 100px;
+}
+.end-r dl dt {
+    display: block;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.end-r dl dd {
+    margin: 20px 0;
+}
+
+.end-r dl dd a:hover {
+    color: aqua;
+}
+

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* 后代选择器  可以是任意后代*/
+        ol li {
+            color: aqua;
+        }
+
+        .two li a{
+            color: rgb(0, 255, 60);
+        }
+
+        /* 子元素选择器  必须是亲儿子 */
+        div>p {
+            color: blueviolet;
+        }
+
+        /* 并集选择器  以，隔开*/
+        ol,ul>li {
+            color: brown;
+        }
+
+    </style>
+</head>
+<body>
+    <ol>
+        <li>I am ol's son后代</li>
+        <li>I am ol's son后代</li>
+        <li>I am ol's son后代</li>
+    </ol>
+    <ul>
+        <li>I am ul's son后代</li>
+        <li>I am ul's son后代</li>
+        <li>I am ul's son后代</li>
+    </ul>
+    <ul  class="two">
+        <li>I am ul's son too后代</li>
+        <li>I am ul's son too后代</li>
+        <li>I am ul's son too后代</li>
+        <li>666<a href="#">nh</a></li>
+    </ul>
+    <div>
+        <p>son子元素</p>
+        <P><a href="#">son son子元素</a></P>
+    </div>
+</body>
+</html>

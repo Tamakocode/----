@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- 定位==定位模式+边偏移 -->
+    <!-- 元素具有定位之后可以直接设置高度 -->
+    <!-- 1.静态定位 position : static  -->
+    <!-- 2.相对定位 position : relative -->
+    <!-- 特点：1。相对于自己的原位置移动   2.不脱标，继续保留原来位置 -->
+    <!-- 3.绝对定位 -->
+    <!-- 特点：1.没有先辈或者先辈没有定位的，按浏览器文档做标准    2.先辈有定位的，按最近的先辈的定位做标准    3.绝对定位不占原来位置 -->
+    <!-- 4.固定定位 -->
+    <!-- 特点： 1.以浏览器可视窗口为标准，不随滚轮滚动 -->
+    <!-- 5.叠放次序 z-index -->
+    <!-- 特点：参数越大，优先级越高 -->
+
+    <style>
+        .test1 {
+            height: 300px;
+            background-color: palegoldenrod;
+        }
+
+        .box1 {
+            /* 定位模式 */
+            position: relative;
+            /* 边偏移 */
+            top: 30px;
+            left: 30px;
+
+            width: 100px;
+            height: 100px;
+            background-color: aqua;
+        }
+
+        .box2 {
+            width: 100px;
+            height: 100px;
+            background-color: rebeccapurple;
+        }
+
+
+        .test2 {
+            position: relative;
+            height: 400px;
+            background-color: pink;
+        }
+
+        .box3 {
+            position: absolute;
+            top: 50px;
+            left: 50px;
+            width: 100px;
+            height: 100px;
+            background-color: rgb(30, 0, 255);
+        }
+
+        .box4 {
+            width: 200px;
+            height: 200px;
+            background-color: skyblue;
+        }
+
+        .test3 {
+            width: 1000px;
+            height: 1000px;
+            background-color: skyblue;
+            margin: 0 auto;
+        }
+
+        .box5 {
+            position: fixed;
+            /* 1.走浏览器宽度的一半 */
+            left: 50%;
+            top: 200px;
+            /* 2。利用margin走版心盒子宽度的一半 */
+            margin-left: 500px;
+            width: 50px;
+            height: 150px;
+            background-color: yellowgreen;
+        }
+
+        .box6 {
+            position: sticky;
+            /* 1.走浏览器宽度的一半 */
+            left: 0px;
+            top: 0;
+            /* 2。利用margin走版心盒子宽度的一半 */
+            width: 50px;
+            height: 150px;
+            background-color: rgb(219, 197, 30);
+        }
+
+        .test4 {
+            position: relative;
+            height: 300px;
+            background-color: palegreen;
+        }
+
+        .box7 {
+            position: absolute;
+            top: 30px;
+            left: 30px;
+            z-index: 1;
+            width: 100px;
+            height: 100px;
+            background-color: red;
+        }
+
+        .box8 {
+            position: absolute;
+            top: 60px;
+            left: 60px;
+            z-index: 3;
+            width: 100px;
+            height: 100px;
+            background-color: green;
+        }
+
+        .box9 {
+            position: absolute;
+            top: 100px;
+            left: 100px;
+            z-index: 2;
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <div class="test1">
+        <div class="box1"></div>
+        <div class="box2"></div>
+    </div>
+
+    <div class="test2">
+        <div class="box3"></div>
+        <div class="box4"></div>
+    </div>
+
+    <div class="test3">
+        <div class="box5"></div>
+        <div class="box6"></div>
+    </div>
+
+    <div class="test4">
+        <div class="box7"></div>
+        <div class="box8"></div>
+        <div class="box9"></div>
+
+    </div>
+</body>
+
+</html>

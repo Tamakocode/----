@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>表单标签</title>
+</head>
+<body>
+    <!-- action为提交目的地      method为提交方式      name为表单名称 -->
+    <form  action="xxx.php"   method="post"  name="学生档案">
+        <!-- text 文本框   maxlength为最大长度-->
+        用户名:<input  type="text"  name="username"   maxlength="20"></input>  <br>
+
+        <!-- password  密码框    minlength为最小长度 -->
+        密码:<input  type="password"  name="key"  minlength="10"></input>   <br>
+
+        <!-- radio 单选框 ； 各个选项取同一个name实现单选-->
+        性别: <br>
+        男<input  type="radio"  name="sex"  value="nan"></input>  
+        女<input type="radio"   name="sex"  value="nv"></input>   
+        <br>
+        <!-- checkbox  复选框      checked为默认选择 -->
+        爱好：<br>
+        打篮球<input  type="checkbox"   name="basketboll"   checked="checked" ></input> <br>
+        玩游戏<input  type="checkbox"   name="game"></input> <br>
+        练字<input  type="checkbox"     name="zi"></input> <br>
+        踢足球<input  type="checkbox"   name="footboll"></input> <br>
+
+        <!-- submit 提交信息给后台 -->
+        <input  type="submit"  value="确认并提交"></input>   <br>
+
+        <!-- reset  重置信息 -->
+        <input  type="reset"   value="重新填写"></input>    <br>
+
+        <!-- button  普通按钮 -->
+        <input  type="button"    value="获取验证码"></input>  <br>
+
+        <!-- file 文件域   上传文件 -->
+        <input  type="file">  </input>   <br>
+
+        <!-- lable标签  增加点击范围 -->
+        性别: <br>
+        <label for="nan">男</label><input type="radio" name="sex" value="nan"  id="nan"> </input>
+        <label for="nv">女</label><input type="radio" name="sex" value="nv" id="nv"> </input>
+        <br>
+        <!-- select 下拉表单 -->
+        籍贯：
+        <select>
+            <option value="beijing"> 北京</option>
+            <option> 广东</option>
+            <option> 广西</option>
+            <option> 武汉</option>
+            <option> 海南</option>
+            <option selected="selected"> 浙江</option>
+        </select>
+        <br>
+
+        <!-- textarea 文本域 -->
+        建议与反馈：<br>
+        <textarea  rows="10"  cols="20">
+          这里可以写建议与反馈。
+        </textarea>
+
+
+ 
+
+    </form>
+</body>
+</html>

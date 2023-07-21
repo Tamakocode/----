@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 方法4 ：双伪元素 */
+        .clearfix:before,
+        .clearfix:after {
+            content: "";
+            display: table;
+        }
+        .clearfix:after {
+            clear: both;
+        }
+
+        /* 方法3 ：after伪元素 */
+        /* .clearfix:after {
+            content: "";
+            display: block;
+            height: 0;
+            clear: both;
+            visibility: hidden;
+        } */
+        .box {
+            border: 2px solid red;
+            /* 方法2 ：为父元素添加overflow:hidden/auto/scroll */
+            /* overflow: hidden; */
+        }
+        .son1 {
+            width: 100px;
+            height: 100px;
+            background-color: aqua;
+            float: left;
+        }
+        .son2 {
+            width: 100px;
+            height: 100px;
+            background-color: blueviolet;
+            float: right;
+        }
+        /* 方法1 : 在最后一个子元素之后添加一个元素，标记clear:both */
+        /* .clear {
+            clear: both;
+        } */
+        .fri {
+            height: 100px;
+            background-color: pink;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box clearfix">
+        <div class="son1"></div>
+        <div class="son2"></div>
+        <div class="clear"></div>
+    </div>
+    <div class="fri"></div>
+</body>
+</html>

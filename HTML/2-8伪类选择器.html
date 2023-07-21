@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 1.链接伪类选择器 */
+        /* 未点击（访问）的链接 */
+        a:link {
+            color: black;
+            text-decoration: none;
+        }
+
+        /* 已点击（访问）的链接 */
+        a:visited {
+            color: red;
+            text-decoration:line-through;
+        }
+         
+        /* 光标经过的链接 */
+        a:hover {
+            color: aqua;
+        }
+         
+        /* 光标按住选择的链接 */
+        a:active {
+            color: lawngreen;
+        }
+
+
+        /* 2. :focus伪类选择器  选择光标选中的表单元素*/
+        input:focus {
+            background-color: gold;
+            
+        }
+
+    </style>
+</head>
+<body>
+    <a href="#">sduisdiudiusd</a>
+    <br>
+    <input type="text">
+    <input type="text">
+    <input type="text">
+</body>
+</html>

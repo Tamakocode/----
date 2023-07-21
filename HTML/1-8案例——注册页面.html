@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="widtr=device-widtr, initial-scale=1.0">
+    <title>注册页面</title>
+</head>
+
+<body>
+    <h3>信息表</h3>
+    <table border="1" width="600" cellpadding="0" cellspacing="0">
+        <!-- 第一行 -->
+        <tr>
+            <td>性别:</td>
+            <td>
+                <input type="radio" id="nan" name="sex">男</input>
+                <input type="radio" id="nv" name="sex">女</input>
+
+            </td>
+        </tr>
+
+        <!-- 第二行 -->
+        <tr>
+            <td>姓名：</td>
+            <td>
+                <input type="text" maxlengtr="10"></input>
+            </td>
+        </tr>
+
+        <!-- 第三行 -->
+        <tr>
+            <td>地址：</td>
+            <td>
+                <input type="text" size=""></input>
+            </td>
+        </tr>
+
+
+        <!-- 第四行 -->
+        <tr>
+            <td>出生日期：</td>
+            <td>
+                <select>
+                    <option>--Year--</option>
+                    <option>2001</option>
+                    <option>2002</option>
+                    <option>2003</option>
+                </select>
+
+                <select>
+                    <option>--month--</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                </select>
+
+                <select>
+                    <option>--day--</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                </select>
+            </td>
+
+
+        </tr>
+
+        <!-- 第五行 -->
+        <tr>
+            <td>婚姻情况：</td>
+            <td>
+                未婚<input type="radio" name="marry" checked="checked"></input>
+                已婚<input type="radio" name="marry"></input>
+                离异<input type="radio" name="marry"></input>
+
+            </td>
+        </tr>
+
+        <!-- 第六行 -->
+        <tr>
+            <td>精通语言：</td>
+            <td>
+                c/c++ <input type="checkbox"> </input> &nbsp;&nbsp;
+                java <input type="checkbox"> </input> &nbsp;&nbsp;
+                python <input type="checkbox"> </input> &nbsp;&nbsp;
+                css <input type="checkbox"> </input> <br>
+                javascript <input type="checkbox"> </input> &nbsp;&nbsp;
+                php/go <input type="checkbox"> </input> &nbsp;&nbsp;
+                其他：<input type="text"></input>
+            </td>
+        </tr>
+
+        <!-- 第七行 -->
+        <tr>
+            <td>手机号：</td>
+            <td>
+                <input type="text" maxlength="11" minlength="11"></input>
+                <input type="text" size="10" value="请输入验证码"></input>
+                <input type="button" value="获取验证码"></input>
+            </td>
+        </tr>
+
+        <!-- 第八行 -->
+        <tr>
+            <td>简介</td>
+            <td>
+                <textarea cols="50" rows="5">
+
+               </textarea>
+            </td>
+        </tr>
+
+        <!-- 第九行 -->
+        <tr>
+            <td>
+                <input type="checkbox">我已详细阅读并同意注册条款</input>
+            </td>
+            <td>
+                <input type="button"  value="--注册--" ></input>
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>
